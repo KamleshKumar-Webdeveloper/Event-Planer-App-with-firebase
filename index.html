@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      defer
+      src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"
+    ></script>
+
+    <script
+      defer
+      src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"
+    ></script>
+    <script
+      defer
+      src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"
+    ></script>
+
+    <script defer src="./init-firebase.js"></script>
+    <link rel="stylesheet" href="./index.css">
+    <title>Signup</title>
+  </head>
+  <body>
+    <form id="signup-form">
+      <h1>Signup</h1>
+      <input type="text" id="firstname" class="form-input" placeholder="first name" />
+      <input type="text" id="lastname" class="form-input" placeholder="last name" />
+      <input type="email" id="email" class="form-input" placeholder="Email" />
+      <input type="password" id="password" class="form-input" placeholder="Password" />
+      <button onclick="signup(event)" class="form-input">Signup</button>
+      <p>Already have an account? <a href="./login/login.html">Login</a></p>
+    </form>
+    <script src="./index.js"></script>
+  </body>
+</html>
