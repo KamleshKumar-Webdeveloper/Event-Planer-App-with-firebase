@@ -24,10 +24,12 @@ const signup = (event) => {
         .set(userData)
         .then(() => {
           window.location.href = "./login/login.html";
-          alert("succesfully Registerd!")
+          alert("Registered Successfully!")
         })
         .catch((error) => {
-          console.log( error);
+       
+         console.log(error);
+         
         });
     })
     .catch((error) => {

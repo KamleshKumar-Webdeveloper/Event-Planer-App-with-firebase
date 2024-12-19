@@ -19,19 +19,39 @@
     ></script>
 
     <script defer src="../init-firebase.js"></script>
-<link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="login.css" />
   </head>
   <body>
     <form id="login-form">
       <h1>Login</h1>
-      <input type="email" id="email" placeholder="Email" />
-      <input type="password" id="password" placeholder="Password" />
-      <button onclick="login(event)">Login</button>
-      <button onclick="forgotPassword(event)">Forgot Password?</button>
+      <input type="email" id="email" placeholder="E-mail" class="form-input" />
+      <div>
+        <input
+        type="password"
+        id="password"
+        placeholder="Password"
+        class="form-input"
+      />  
+      <p id="input-error"></p>
+      </div>
+      <button
+        onclick="login(event)"
+        class="form-input btnGroup"
+        id="login-button"
+      >
+        Login
+      </button>
+      <button
+        onclick="forgotPassword(event)"
+        class="form-input btnGroup"
+        id="forgot-password-button"
+      >
+      
+        Forgot Password?
+      </button>
       <p>Don't have an account? <a href="../index.html">Signup</a></p>
     </form>
 
     <script src="./login.js"></script>
   </body>
 </html>
-

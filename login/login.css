@@ -1,66 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
 
-      body {
-        margin: 0;
-        padding: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        min-height: 100vh;
-        font-family: Arial, sans-serif;
-      }
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-      #login-form {
-        background: white;
-        padding: 30px;
-        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-        width: 100%;
-        max-width: 340px;
-      }
+#login-form {
+  background: white;
+  padding: 40px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
 
-      h1 {
-        text-align: center;
-        color: #333;
-        margin-bottom: 30px;
-      }
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+}
 
-      input {
-        width: 100%;
-        padding: 12px;
-        margin: 8px 0;
-        border: 1px solid #ddd;
-        border-radius: 5px;
-        box-sizing: border-box;
-        font-size: 16px;
-      }
+.form-input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  /* border-radius: 5px; */
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
 
-      button {
-        width: 100%;
-        padding: 12px;
-        background: #3498db;
-        color: white;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        font-size: 16px;
-        margin-top: 20px;
-        transition: background 0.3s ease;
-      }
+.btnGroup{
+  border-radius: 50px;
+}
 
-      button:hover {
-        background: #2980b9;
-      }
+#signup-button{
+  border-radius: 50px;
+}
 
-      p {
-        text-align: center;
-        margin-top: 20px;
-      }
+.form-input:focus {
+  outline: none;
+  border-color: #2980b9;
+}
 
-      a {
-        color: #3498db;
-        text-decoration: none;
-      }
+button.form-input {
+  background: #2980b9;
+  color: white;
+  cursor: pointer;
+  border: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
 
-      a:hover {
-        text-decoration: underline;
-      }
- 
+button.form-input:hover {
+  background: #3498db;
+}
+
+p {
+  text-align: center;
+  margin-top: 20px;
+  color: #666;
+}
+
+a {
+  color: #2980b9;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}

@@ -24,11 +24,12 @@
   <body>
     <form id="signup-form">
       <h1>Signup</h1>
-      <input type="text" id="firstname" class="form-input" placeholder="first name" />
-      <input type="text" id="lastname" class="form-input" placeholder="last name" />
-      <input type="email" id="email" class="form-input" placeholder="Email" />
+      <input type="text" id="firstname" class="form-input" placeholder="First Name" />
+      <input type="text" id="lastname" class="form-input" placeholder="Last Name" />
+      <input type="email" id="email" class="form-input" placeholder="E-mail" />
       <input type="password" id="password" class="form-input" placeholder="Password" />
-      <button onclick="signup(event)" class="form-input">Signup</button>
+      <p id="input-error"></p>
+      <button onclick="signup(event)" class="form-input" id="signup-button">Signup</button>
       <p>Already have an account? <a href="./login/login.html">Login</a></p>
     </form>
     <script src="./index.js"></script>
